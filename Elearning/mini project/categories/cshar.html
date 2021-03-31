@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset=:UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EdX</title>	
+	<link rel="stylesheet" href="cate.css">
+	<link rel="icon" type="image/x-icon" href="fo.png">
+</head>
+<body>
+	
+    
+
+	<div class="wrapper">
+	<nav class="navbar">
+		<img class="logo" src="fo.png">
+		<ul>
+			<li><a href="reveal/index.html">Home</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Terms of use</a></li>
+			<li><a href="login.html">Login</a></li>
+
+		</ul>
+	</nav>
+  <div style="margin-left: 25px;">
+    <p>
+      <h3 style="text-align: center;">C# Programming</h3>
+      <b>c# overview:-</b><br>
+      C# is a modern, general-purpose, object-oriented programming language developed by Microsoft and approved by European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). <br>
+ C# was developed by Anders Hejlsberg and his team during the development of .Net Framework.<br> 
+ C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures. <br>
+ <br>
+ The following reasons make C# a widely used professional language: <br>
+ <li>It is a modern, general-purpose programming language</li>
+ <li>It is object oriented.</li>
+ <li>It is component oriented.</li>
+ <li>It is easy to learn.</li>
+ <li>It is a tructured language. </li>
+ <li> It produces efficient programs.</li>
+ <li>It can be compiled on a variety of computer platforms.</li>
+ <li>It is a part of .Net Framework. </li><br>
+  <br>
+ 
+<b>Strong Programming Features of C# </b><br>
+ Although C# constructs closely follow traditional high-level languages, C and C++ and being an object-oriented programming language. It has strong resemblance with Java, it has numerous strong programming features that make it endearing to a number of programmers worldwide. <br>
+ Following is the list of few important features of C#: <br>
+ <li>Boolean Conditions</li>
+ <li>Automatic Garbage Collection</li>
+ <li>Standard Library</li>
+ <li>Assembly Versioning</li>
+ <li>Properties and Events</li>
+ <li>Delegates and Events Management</li>
+ <li>Easy-to-use Generics</li>
+ <li> Indexers Conditional Compilation</li>
+ <li> Simple Multithreading</li>
+ <li> LINQ and Lambda Expressions  </li>
+ <li>Integration with Windows </li><br>    
+<br>
+<b>The.NetFramework :-</b><br>
+ The .Net framework is a revolutionary platform that helps you to write the following types of applications: <br>
+  Windows applications <br> Web applications<br>  Web services<br> The .Net framework applications are multi-platform applications. The framework has been designed in such a way that it can be used from any of the following languages: C#, C++, Visual Basic, Jscript, COBOL, etc. All these languages can access the framework as well as communicate with each other. <br>
+ The .Net framework consists of an enormous library of codes used by the client languages such as C#. <br>Following are some of the components of the .Net framework: <br>
+  Common Language Runtime (CLR)<br>  The .Net Framework Class Library<br> Common Language Specification<br>  Common Type System 
+ <br> Metadata and Assemblies<br>  Windows Forms<br>  ASP.Net and ASP.Net AJAX<br> ADO.Net<br>  Windows Workflow Foundation (WF)<br>  Windows Presentation Foundation<br>  Windows Communication Foundation (WCF)<br>  LINQ <br>For the jobs each of these components perform, please see ASP.Net - Introduction, and for details of each component, please consult Microsoft's documentation.
+ <br><br><b>IntegratedDevelopmentEnvironment(IDE) for C# :-</b><br> Microsoft provides the following development tools for C# programming:<br>  Visual Studio 2010 (VS)<br>  Visual C# 2010 Express (VCE)<br>  Visual Web Developer<br><br> The last two are freely available from Microsoft official website. Using these tools, you can write all kinds of C# programs from simple command-line applications to more complex applications.You can also write C# source code files using a basic text editor like Notepad, and compile the code into assemblies using the command-line compiler, which is again a part of the .NET Framework.Visual C# Express and Visual Web Developer Express edition are trimmed down versions of Visual Studio and has the same appearance. They retain most features of Visual Studio. In this tutorial, we have used Visual C# 2010 Express. <br>
+ You can download it from <a href=" https://Visual Studio.Microsoft.com">Microsoft Visual Studio</a> . It gets installed automatically on your machine.<br>
+ Note: You need an active internet connection for installing the express edition.<br><br>  
+ Before we study basic building blocks of the C# programming language, let us look at a bare minimum C# program structure so that we can take it as a reference in upcoming chapters. <br>
+ <b>CreatingHelloWorldProgram :-</b><br>
+ A C# program consists of the following parts: <br>
+  Namespace declaration<br>  A class  Class methods<br>  Class attributes <br> A Main method<br>  Statements and Expressions <br> Comments Let us look at a simple code that prints the words "Hello World": <br><br>
+ using System; <br>namespace HelloWorldApplication <br>{<br>class HelloWorld <br>{ <br>static void Main(string[] args) <br>{ <br>
+Console.WriteLine("Hello World"); <br>Console.ReadKey(); <br>} <br>} <br>} <br>
+ <br>When this code is compiled and executed, it produces the following result: <br><b>Result:</b>Hello World <br> <br>
+Let us look at the various parts of the given program: <br>
+  The first line of the program using System; - the using keyword is used to include the System namespace in the program. A program generally has multiple using statements.<br>  The next line has the namespace declaration. A namespace is a collection of classes. The HelloWorldApplication namespace contains the class HelloWorld.<br>  The next line has a class declaration, the class HelloWorld contains the data and method definitions that your program uses. Classes generally contain multiple methods. Methods define the behavior of the class. However, the HelloWorld class has only one method Main.<br>  The next line defines the Main method, which is the entry point for all C# programs. The Main method states what the class does when executed. <br> The next line /*...*/ is ignored by the compiler and it is put to add comments in the program.<br>  The Main method specifies its behavior with the statement Console.WriteLine("Hello World");  WriteLine is a method of the Console class defined in the System namespace. This statement causes the message "Hello, World!" to be displayed on the screen.<br>  The last line Console.ReadKey(); is for the VS.NET Users. This makes the program wait for a key press and it prevents the screen from running and closing quickly when the program is launched from Visual Studio .NET.<br> It is worth to note the following points: <br>
+  C# is case sensitive. <br>
+  All statements and expression must end with a semicolon (;).  The program execution starts at the Main method.  Unlike Java, program file name could be different from the class name. <br> <br>
+<b>Compiling and Executing the Program :-</b> <br>
+ If you are using Visual Studio.Net for compiling and executing C# programs, take the following steps: <br>
+  Start Visual Studio. <br>
+  On the menu bar, choose File -> New -> Project.<br>  Choose Visual C# from templates, and then choose Windows.<br>  Choose Console Application. <br> Specify a name for your project and click OK button. This creates a new project in Solution Explorer. 
+  Write code in the Code Editor.<br>  Click the Run button or press F5 key to execute the project. A Command Prompt window appears that contains the line Hello World. <br><br>You can compile a C# program by using the command-line instead of the Visual Studio IDE: <br>
+  Open a text editor and add the above-mentioned code.,<br>  Save the file as helloworld.cs<br>  Open the command prompt tool and go to the directory where you saved the file. <br>
+  Type csc helloworld.cs and press enter to compile your code.<br>  If there are no errors in your code, the command prompt takes you to the next line and generates helloworld.exe executable file.<br> Type helloworld to execute your program.<br>  You can see the output Hello World printed on the screen. <br><br>
+ C# is an object-oriented programming language. In Object-Oriented Programming methodology, a program consists of various objects that interact with each other by means of actions. The actions that an object may take are called methods. Objects of the same kind are said to have the same type or are said to be in the same class<br><br>For example, let us consider a Rectangle object. It has attributes such as length and width. Depending upon the design, it may need ways for accepting the values of these attributes, calculating the area, and displaying details. <br>
+ Let us look at implementation of a Rectangle class and discuss C# basic syntax: <br>
+ using System; <br>
+ namespace RectangleApplication <br> 
+{ <br> 
+class Rectangle <br>
+ { <br>
+ double length; <br> 
+double width; <br> 
+public void Acceptdetails() <br> 
+{ <br> 
+length = 4.5;<br>
+width = 3.5; <br> 
+} <br> 
+public double GetArea() <br> 
+{ <br> 
+return length * width; <br> 
+} <br>
+ public void Display() <br> 
+{ <br> 
+Console.WriteLine("Length: {0}", length); <br>
+ Console.WriteLine("Width: {0}", width); <br> 
+Console.WriteLine("Area: {0}", GetArea()); <br> 
+} <br> 
+} <br> 
+class ExecuteRectangle <br> 
+{ <br> 
+static void Main(string[] args) <br> 
+{ <br> 
+Rectangle r = new Rectangle(); <br> 
+r.Acceptdetails(); <br>
+ r.Display(); <br> 
+Console.ReadLine(); <br> 
+} <br>
+ } <br>
+ } <br> 
+ <br> 
+When the above code is compiled and executed, it produces the following result: <br> 
+Length: 4.5 <br> 
+Width: 3.5 <br>
+Area: 15.75 <br>
+<br>The using Keyword The first statement in any C# program is <br> 
+using System; <br>
+The using keyword is used for including the namespaces in the program. A program can include multiple using statements. <br> 
+The class Keyword The class keyword is used for declaring a class. <br> 
+Comments in C# Comments are used for explaining code. Compilers ignore the comment entries. The multiline comments in C# programs start with /* and terminates with the characters */ as shown below: <br> 
+/* This program demonstrates <br> 
+The basic syntax of C# programming <br>
+ Language */ <br> 
+Single-line comments are indicated by the '//' symbol. For example, <br>
+ }//end class Rectangle <br> 
+ <br>
+Member Variables Variables are attributes or data members of a class, used for storing data. In the preceding program, the Rectangle class has two member variables named length and width. <br> 
+<br>
+Member Functions Functions are set of statements that perform a specific task. The member functions of a class are declared within the class. Our sample class Rectangle contains three member functions: AcceptDetails, GetArea and Display. <br>
+ <br>
+Instantiating a Class In the preceding program, the class ExecuteRectangle contains the Main() method and instantiates the Rectangle class.
+<br>The using Keyword The first statement in any C# program is <br>
+ using System; <br>
+ The using keyword is used for including the namespaces in the program. A program can include multiple using statements. <br> 
+The class Keyword The class keyword is used for declaring a class. <br> 
+Comments in C# Comments are used for explaining code. Compilers ignore the comment entries. The multiline comments in C# programs start with /* and terminates with the characters */ as shown below: <br> 
+ /* This program demonstrates <br> 
+The basic syntax of C# programming<br> 
+Language */ <br> 
+Single-line comments are indicated by the '//' symbol. For example, <br> 
+}//end class Rectangle <br> 
+<br>
+Member Variables Variables are attributes or data members of a class, used for storing data. In the preceding program, the Rectangle class has two member variables named length and width. <br> 
+<br>
+Member Functions Functions are set of statements that perform a specific task. The member functions of a class are declared within the class. Our sample class Rectangle contains three member functions: AcceptDetails, GetArea and Display. <br> 
+<br>
+Instantiating a Class In the preceding program, the class ExecuteRectangle contains the Main() method and instantiates the Rectangle class.<br>
+<br>
+<b> Identifiers :-</b><br>
+<br> 
+An identifier is a name used to identify a class, variable, function, or any other userdefined item. The basic rules for naming classes in C# are as follows: <br>
+  A name must begin with a letter that could be followed by a sequence of letters, digits (0 - 9) or underscore. The first character in an identifier cannot be a digit.  It must not contain any embedded space or symbol such as ? - +! @ # % ^ & * ( ) [ ] { } . ; : " ' / and \. However, an underscore ( _ ) can be used.  It should not be a C# keyword. <br> 
+ <br>
+<b>C#Keywords:-</b> <br>
+ Keywords are reserved words predefined to the C# compiler. These keywords cannot be used as identifiers. However, if you want to use these keywords as identifiers, you may prefix the keyword with the @ character. <br>
+ In C#, some identifiers have special meaning in context of code, such as get and set are called contextual keywords. <br>
+ <br>
+ <b>TheusingKeyword :-</b><br>
+ The first statement in any C# program is - <br> 
+ <br>
+using System; <br>
+ <br>
+Theusingkeyword is used for including the namespaces in the program. A program can include multiple using statements. <br>
+ <br>
+ <B>TheclassKeyword</B> <br>
+ Theclasskeyword is used for declaring a class. <br>
+ <br>
+ <b>CommentsinC# :-</b><br>
+ Comments are used for explaining code. Compiler ignores the comment entries. The multiline comments in C# programs start with /* and terminates with the characters */ as shown below: <br>
+ <br>
+ /* This program demonstrates <br>
+ <br>
+The basic syntax of C# programming <br>
+ <br>
+Language */ <br>
+  <br>
+Single-line comments are indicated by the '//' symbol. For example, <br>
+  <br>
+ <a href=""><b>For More.... Click here to get Doc</b></a>   <br>
+    </p>
+  </div>
+	</div>
+	 <footer class="footer">
+      <div class="inner-footer">
+        <div class="social-links">
+          <ul>
+            <li class="social-items"><a href="https://www.facebook.com/EdX-101315835168141"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a></li>
+            <li class="social-items"><a href="https://www.instagram.com/edx_learn/ "><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></li> 
+            <li class="social-items"><a href="https://www.youtube.com/channel/UC7bEG7X-TGMIulkgyuGoOMA"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/> </a></li>
+            <li class="social-items"><a href="https://www.linkedin.com/groups/13931059/"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a></li>
+          </ul>
+          
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li class="quick-items"><a href="index.html">Home</a></li>
+            <li class="quick-items"><a href="feed.html">contact us</a></li>
+            
+            <li class="quick-items"><a href="images/cookies.html">Terms of use</a></li>
+            <li class="quick-items"><a href="#">Help?</a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      <div class="outer-footer">
+        Copyrights &copy; EdX, All rights reserved
+      </div>
+
+    </footer>
+
+
+   
+</body>
+</html>      

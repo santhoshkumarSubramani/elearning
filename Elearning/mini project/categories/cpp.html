@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset=:UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EdX</title>	
+	<link rel="stylesheet" href="cate.css">
+	<link rel="icon" type="image/x-icon" href="fo.png">
+</head>
+<body>
+	
+    
+
+	<div class="wrapper">
+	<nav class="navbar">
+		<img class="logo" src="fo.png">
+		<ul>
+			<li><a href="reveal/index.html">Home</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Terms of use</a></li>
+			<li><a href="login.html">Login</a></li>
+
+		</ul>
+	</nav>
+  <div  style="margin-left: 25px;>
+
+  
+  <h1 style="text-align: center;">C++ Programming </h1>
+  <p><b> Overview:</b><br>
+        The <b>C++ programming language </b> is a general-purpose, high-level language that was originally developed by Dennis M. Ritchie to develop the UNIX operating system at Bell Labs. C was originally first implemented on the DEC PDP-11 computer in 1972. 
+In 1978, Brian Kernighan and Dennis Ritchie produced the first publicly available description of C, now known as the K&R standard. 
+The UNIX operating system, the C compiler, and essentially all UNIX applications programs have been written in C. <br>The C has now become a widely used professional language for various reasons. 
+ <li>Easy to learn </li>
+ <li>Structured language </li>
+ <li>It produces efficient programs. </li>
+ <li>It can handle low-level activities. </li>
+ <li>It can be compiled on a variety of computer platforms</li> 
+ <br>
+ 
+ <h4> Facts about C++ </h4>
+ <li> C++ was invented to write an operating system called UNIX. </li> 
+ <li>C++ is a successor of B language, which was introduced around 1970. </li> 
+ <li>The language was formalized in 1988 by the American National Standard Institute. (ANSI). </li> 
+ <li>The UNIX OS was totally written in C by 1973. </li>  
+ <br>
+ <b>Why to use C++? </b><br>
+C was initially used for system development work, in particular the programs that make up the operating system. C was adopted as a system development language because it produces code that runs nearly as fast as code written in assembly language. Some examples of the use of C might be: <br>
+  <li>Operating Systems </li>
+  <li>Language Compilers </li>
+  <li>Assemblers </li>
+  <li>Text Editors</li>
+  <li>Print Spoolers</li>
+  <li>Network Drivers </li>
+  <li>Modern Programs </li>
+  <li>Databases </li>
+  <li>Language Interpreters </li>
+  <li>Utilities </li>
+<br>
+<b>C++ Programs :</b>
+<br>
+A C++ program can vary from 3 lines to millions of lines and it should be written into one or more text files with extension ".c"; for example, hello.c. You can use "vi", "vim" or any other text editor to write your C program into a file. 
+This tutorial assumes that you know how to edit a text file and how to write source code using any programming language. <br>
+<br>
+<b style="center">C++ Environment Setup </b><br>
+<u>This section describes how to set up your system environment before you start doing your programming using C language.</u> 
+Before you start doing programming using C programming language, you need the following two softwares available on your computer, (a) Text Editor and (b) The C Compiler.<br>
+<br>
+<b>Text Editor:</b><br>
+This will be used to type your program. Examples of few editors include Windows Notepad, OS Edit command, Brief, Epsilon, EMACS, and vim or vi.<br>
+Name and version of text editor can vary on different operating systems. For example, Notepad will be used on Windows, and vim or vi can be used on windows as well as Linux or UNIX.<br>
+The files you create with your editor are called source files and contain program source code. The source files for C programs are typically named with the extension “.c”. <br>
+Before starting your programming, make sure you have one text editor in place and you have enough experience to write a computer program, save it in a file, compile it and finally execute it.<br>
+<br>
+<b>The C++ Compiler :</b><br>
+The source code written in source file is the human readable source for your program. It needs to be "compiled", to turn into machine language so that your CPU can actually execute the program as per instructions given. <br>
+This C++ programming language compiler will be used to compile your source code into final executable program. I assume you have basic knowledge about a programming language compiler. <br>
+Most frequently used and free available compiler is GNU C/C++ compiler, otherwise you can have compilers either from HP or Solaris if you have respective Operating Systems. <br>
+Following section guides you on how to install GNU C/C++ compiler on various OS. I'm mentioning C/C++ together because GNU gcc compiler works for both C and C++ programming languages. <br>
+<br>
+<b> C++ Program Structure :-</b><br>
+Let’s look into Hello World example using C Programming Language. Before we study basic building blocks of the C programming language, let us look a bare minimum C program structure so that we can take it as a reference in upcoming chapters. <br>
+<br>
+<b>C++ Hello World Example :</b><br>
+A C++ program basically consists of the following parts: <br>
+<li>Preprocessor Commands </li>
+<li>Functions </li>
+<li>Variables </li>
+<li>Statements & Expressions </li>
+<li>Comments </li> <br> 
+ 
+Let us look at a simple code that would print the words "Hello World": <br>
+#include <stdio.h> <br>
+ int main() {    /* my first program in C */ <br>   printf("Hello, World! \n");     <br>   return 0; } <br>
+Let us look various parts of the above program: <br>
+1. The first line of the program #include <stdio.h> is a preprocessor command, which tells a C compiler to include stdio.h file before going to actual compilation. <br>
+2. The next line int main() is the main function where program execution begins. <br>
+3. The next line /*...*/ will be ignored by the compiler and it has been put to add additional comments in the program. So such lines are called comments in the program. <br>
+4. The next line printf(...) is another function available in C which causes the message "Hello, World!" to be displayed on the screen. <br>
+5. The next line return 0; terminates main()function and returns the value 0. <br>
+<br>
+<b>Compile & Execute C Program:-</b> <br>
+Let’s look at how to save the source code in a file, and how to compile and run it. Following are the simple steps: <br>
+1. Open a text editor and add the above-mentioned code. <br>
+2. Save the file as hello.c <br>
+3. Open a command prompt and go to the directory where you saved the file. <br>
+4. Type gcc hello.c and press enter to compile your code. <br>
+5. If there are no errors in your code, the command prompt will take you to the next line and would generate a.out executable file. <br>
+6. Now, type a.out to execute your program. <br>
+7. You will be able to see "Hello World" printed on the screen <br>
+$ gcc hello.c <br>
+$ ./a.out <br>
+Hello, World! <br>
+Make sure that gcc compiler is in your path and that you are running it in the directory containing source file hello.c.<br>
+<br>
+<b>C Basic Syntax </b><br>
+<u>This chapter will give details about all the basic syntax about C programming language including tokens, keywords, identifiers, etc.</u>  <br>You have seen a basic structure of C program, so it will be easy to understand other basic building blocks of the C programming language.<br> 
+<br>
+<b>Tokens in C :-</b><br>
+A C program consists of various tokens and a token is either a keyword, an identifier, a constant, a string literal, or a symbol. For example, the following C statement consists of five tokens: <br>
+printf("Hello, World! \n"); <br>
+<br>
+<B>Semicolons ; </B><br>
+In C program, the semicolon is a statement terminator. That is, each individual statement must be ended with a semicolon. It indicates the end of one logical entity. <br>
+For example, following are two different statements: <br>
+printf("Hello, World! \n"); return 0;<br>
+<br>
+
+<b>Comments:-</b> <br>
+Comments are like helping text in your C program and they are ignored by the compiler. They start with /* and terminates with the characters */ as shown below: <br>
+/* my first program in C */ <br>
+You cannot have comments within comments and they do not occur within a string or character literals. <br>
+<br>
+<b>Identifiers </b><br>
+A C identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z or a to z or an underscore _ followed by zero or more letters, underscores, and digits (0 to 9). <br>
+C does not allow punctuation characters such as @, $, and % within identifiers. C is a case sensitive programming language. Thus, Manpower and manpower are two different identifiers in C. Here are some examples of acceptable identifiers:<br> 
+mohd       zara    abc   move_name  a_123 <br>myname50   _temp   j     a23b9      retVal <br>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+<table style="width:100%">
+  <tr>
+    
+    <th colspan="4" style="text-align: center;" >Keywords</th>
+  </tr>
+  <tr>
+    <td>auto</td><td>else</td><td>long</td><td>switch</td>
+  </tr>
+   <tr>
+    <td>break</td><td>enum</td><td>register</td><td>typedef</td>
+  </tr>
+  <tr>
+    <td>case</td><td>extern</td><td>return</td><td>union</td>
+  </tr><tr>
+    <td>char</td><td>float</td><td>short</td><td>unsigned</td>
+  </tr><tr>
+    <td>const</td><td>for</td><td>signed</td><td>void</td>
+  </tr><tr>
+    <td>continue</td><td>goto</td><td>sizeof</td><td>volotile</td>
+  </tr><tr>
+    <td>default</td><td>if</td><td>static</td><td>while</td>
+  </tr><tr>
+    <td>do</td><td>int</td><td>struct</td><td>double</td>
+  </tr><tr>    
+</table>
+<br>
+<b>Whitespace in C </b><br>
+A line containing only whitespace, possibly with a comment, is known as a blank line, and a C compiler totally ignores it. <br>
+Whitespace is the term used in C to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins. Therefore, in the following statement: <br>
+<br>
+int age; <br>
+There must be at least one whitespace character (usually a space) between int and age for the compiler to be able to distinguish them. On the other hand, in the following statement: <br>
+fruit = apples + oranges;   // get the total fruit <br>
+No whitespace characters are necessary between fruit and =, or between = and apples, although you are free to include some if you wish for readability purpose.<br>
+<br>
+<br>
+<h3><b>C Data Types</b></h3><br> In the C programming language, data types refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted. <br>
+The types in C can be classified as follows: <br>
+<table style="width:100%">
+  <tr>
+    <th>S.no</th>
+    <th colspan="2" style="text-align: center;">Types and Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Basic Types: <br>They are arithmetic types and consists of the two types: (a) integer types and (b) floatingpoint types</td>   
+  </tr>
+   <tr>
+    <td>2</td>
+    <td>Enumerated types: They are again arithmetic types and they are used to define variables that can only be assigned certain discrete integer values throughout the program. </td>    
+  </tr><tr>
+    <td>3</td>
+    <td>The type void: The type specifier void indicates that no value is available. </td>    
+  </tr><tr>
+    <td>4</td>
+    <td>Derived types: They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types. </td>    
+  </tr>
+</table><br>
+The array types and structure types are referred to collectively as the aggregate types. The type of a function specifies the type of the function's return value. We will see basic types in the following section, whereas, other types will be covered in the upcoming chapters. <br>
+<br>
+<b>Integer Types :-</b><br>
+Following table gives you details about standard integer types with its storage sizes and value ranges: <br>
+<a href=""><b>For More.... Click here to get Doc</b></a>   
+  </div>
+</div>  
+  
+  </p>
+
+  </div>
+	 <footer class="footer">
+      <div class="inner-footer">
+        <div class="social-links">
+          <ul>
+            <li class="social-items"><a href="https://www.facebook.com/EdX-101315835168141"><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></a></li>
+            <li class="social-items"><a href="https://www.instagram.com/edx_learn/ "><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></li> 
+            <li class="social-items"><a href="https://www.youtube.com/channel/UC7bEG7X-TGMIulkgyuGoOMA"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/> </a></li>
+            <li class="social-items"><a href="https://www.linkedin.com/groups/13931059/"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/></a></li>
+          </ul>
+          
+        </div>
+        <div class="quick-links">
+          <ul>
+            <li class="quick-items"><a href="index.html">Home</a></li>
+            <li class="quick-items"><a href="feed.html">contact us</a></li>
+            
+            <li class="quick-items"><a href="images/cookies.html">Terms of use</a></li>
+            <li class="quick-items"><a href="#">Help?</a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      <div class="outer-footer">
+        Copyrights &copy; EdX, All rights reserved
+      </div>
+
+    </footer>
+
+
+   
+</body>
+</html>      
